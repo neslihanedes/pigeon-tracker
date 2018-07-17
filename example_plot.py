@@ -1,7 +1,7 @@
 import json
 
-import numpy as np
 from matplotlib import pyplot as plt
+from matplotlib.colors import LogNorm
 
 with open('result.json') as f:
     result_json = f.read()
@@ -16,24 +16,8 @@ for point in result['movements']:
     y.append(point[1])
 plt.plot(x, y)
 plt.savefig('plot.png')
+plt.hist2d(x, y, 20, norm=LogNorm())
+plt.colorbar()
 
+plt.savefig('histo.png')
 plt.show()
-
-# # Create data
-# np_x = np.asarray(x)
-# np_y = np.asarray(y)
-#
-# # x = np.random.randn(4096)
-# # y = np.random.randn(4096)
-#
-# # Create heatmap
-# heatmap, xedges, yedges = np.histogram2d(x, y, bins=(10, 10))
-# extent = [xedges[0], xedges[-1], yedges[0], yedges[-1]]
-#
-# # Plot heatmap
-# plt.clf()
-# plt.title('Heatmap')
-# plt.ylabel('y')
-# plt.xlabel('x')
-# plt.imshow(heatmap, extent=extent)
-# plt.show()
