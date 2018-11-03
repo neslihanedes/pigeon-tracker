@@ -16,7 +16,7 @@ def plot_json(input_file, output_name, show=False):
         y.append(point[1])
 
     axes = plt.gca()
-    axes.set_xlim([500, 1300])
+    axes.set_xlim([400, 1400])
     axes.set_ylim([0, 1000])
 
     # opencv coordinate systems is turned by 180° degree
