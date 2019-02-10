@@ -7,4 +7,4 @@ t = ColorTracker(lower_red, upper_red)
 t.hsv = False
 t.scaling = 0.3
 
-t.track_video("pigeon_video.mp4", 1000)
+t.track_video("example-videos/pigeon_video.mp4", 1000)
