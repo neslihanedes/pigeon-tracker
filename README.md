@@ -23,3 +23,13 @@ jupyter notebook example_notebook.ipynb
 ```
 
 Rendering of the video is very slow though, so it's only recommended for demo purposes.
+
+## Example Videos
+
+Example videos are managed by [git-lfs](https://git-lfs.github.com/). They can be found under `example-videos/` and can 
+be retrieved using git-lfs as well:
+```
+
+```
+
+[]: https://git-lfs.github.com/
